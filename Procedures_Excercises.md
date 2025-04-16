@@ -1,8 +1,8 @@
 # 📝 Zadania SQL — Procedury Składowane (Baza Chinook)
 
-🗂️ **Rozwiązania zadań należy umieścić w pliku `procedures.sql` w katalogu `scripts/`.**
+> 🗂️ **Rozwiązania zadań należy umieścić w pliku `procedures.sql` w katalogu `scripts/`.**
 
-## 🔹 Zadanie 1 — Dodaj nowego klienta
+## 🔹 Zadanie 1 — Poziom prosty: Dodaj nowego klienta
 
 **Opis:**
 Napisz procedurę o nazwie `AddCustomer`, która przyjmuje dane nowego klienta i wstawia je do tabeli `Customer`. Parametry wejściowe:
@@ -16,11 +16,11 @@ Napisz procedurę o nazwie `AddCustomer`, która przyjmuje dane nowego klienta i
 - Zakładamy, że pozostałe dane nie są wymagane lub ustawione jako `NULL`.
 - Dodaj sprawdzenie, czy klient o podanym e-mailu już istnieje. Jeśli tak, zakończ procedurę bez dodawania wpisu.
 
-💡 **Uwaga:** Przygotuj zapytanie testowe, które wywołuje procedurę z przykładowymi danymi, aby sprawdzić jej działanie.
+> 💡 **Uwaga:** Przygotuj zapytanie testowe, które wywołuje procedurę z przykładowymi danymi, aby sprawdzić jej działanie.
 
 ---
 
-## 🔶 Zadanie 2 — Aktualizacja ilości utworów zakupionych przez klienta
+## 🔶 Zadanie 2 — Poziom średni: Aktualizacja ilości utworów zakupionych przez klienta
 
 **Opis:**
 Stwórz procedurę o nazwie `UpdateCustomerInvoiceStats`, która:
@@ -37,13 +37,13 @@ Stwórz procedurę o nazwie `UpdateCustomerInvoiceStats`, która:
 - Jeśli klient nie ma żadnej faktury, wpisz zera.
 - Jeśli klient nie istnieje w tabeli `CustomerStats`, wstaw nowy rekord. W przeciwnym razie zaktualizuj istniejący.
 
-🔍 **Uwaga:** Tabelę `CustomerStats` można stworzyć na podstawie danych wynikowych komendy `SELECT`, używając polecenia `CREATE TABLE CustomerStats AS SELECT ...`.
+> 🔍 **Uwaga:** Tabelę `CustomerStats` można stworzyć na podstawie danych wynikowych komendy `SELECT`, używając polecenia `CREATE TABLE CustomerStats AS SELECT ...`.
 
-💡 **Uwaga:** Przygotuj zapytanie testowe, które wykonuje procedurę z przykładowym `CustomerId`.
+> 💡 **Uwaga:** Przygotuj zapytanie testowe, które wykonuje procedurę z przykładowym `CustomerId`.
 
 ---
 
-## 🔟 Zadanie 3 — Lista ulubionych gatunków klienta
+## 🔟 Zadanie 3 — Poziom zaawansowany: Lista ulubionych gatunków klienta
 
 **Opis:**
 Stwórz procedurę `GetCustomerFavoriteGenres`, która:
@@ -56,7 +56,7 @@ Stwórz procedurę `GetCustomerFavoriteGenres`, która:
 - Zastosuj grupowanie oraz funkcję agregującą `COUNT(*)`.
 - Posortuj wynik malejąco według liczby wystąpień.
 
-💡 **Uwaga:** Przygotuj testowe zapytanie wykonujące procedurę z przykładowym identyfikatorem klienta, aby upewnić się, że działa zgodnie z oczekiwaniami.
+> 💡 **Uwaga:** Przygotuj testowe zapytanie wykonujące procedurę z przykładowym identyfikatorem klienta, aby upewnić się, że działa zgodnie z oczekiwaniami.
 
 ---
 
